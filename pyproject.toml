@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashtag-research-tool"
+version = "1.0.0"
+description = "Find, check and export the right hashtags for your posts — no API key, no internet needed."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Hasnaat Anjum" }]
+
+[project.scripts]
+hashtag-tool = "hashtag_research_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["hashtag_research_tool*"]
